@@ -7,7 +7,7 @@ import useFilter from '../components/hooks/useFilter';
 import ItemCard from '../components/ItemCard';
 
 export default function ShopPage() {
-  const {items, isPending, error} = useFetch('https://lumos-backend-4pcd.onrender.com/items');
+  const {items, isPending, error} = useFetch('https://lumos-api-ffekhccag0ghhecg.westus3-01.azurewebsites.net/api/items');
   const {
     filteredItems,
     types,
