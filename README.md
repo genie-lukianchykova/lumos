@@ -7,12 +7,11 @@ See Figma prototype [here](https://www.figma.com/proto/DCGOOoQtu7mB2CuXVNoSvk/Lu
 
 ## ✨ Features
 
-- Product catalog of lamps and light fixtures
-- Responsive layout using React Bootstrap
-- Product detail pages
-- Basic shopping cart functionality
-- Navigation and routing (React Router)
-- Clean and modern UI design
+- Product catalog of lamps and light fixtures loaded from the backend API
+- Filter products by type and browse themed collections
+- View product details and add items to the shopping cart
+- Cart quantities and items saved in browser local storage
+- Responsive layout and page navigation using React Bootstrap and React Router
 
 ## 🔧 Tech Stack
 
@@ -34,9 +33,9 @@ src/
 
 ## 📝 Notes
 
-- Frontend-only project.
-- All product and collection information is stored in a local JSON file.
-- It acts as a mock database for demonstration purposes.
+- The React frontend gets product and collection data from the ASP.NET Core API.
+- Product information is stored in a SQL Server database and accessed with Entity Framework Core.
+- The `DataImporter` console app can import product data from a JSON file into the database.
 
 ## 📌 Goals
 
@@ -44,9 +43,9 @@ src/
 - Work with React component structure and routing
 - Implement a clean, responsive layout using Bootstrap
 
-## 💡 Future Improvements
+## 🖥️ Backend
 
-- Improving the mobile version
+The project also includes an ASP.NET Core Web API built with .NET 10. It serves product data from a SQL Server database through the `GET /api/items` endpoint, using Entity Framework Core for database access and migrations.
 
 ## 📫 Contact
 
