@@ -5,6 +5,7 @@ Desktop.ini
 
 # Editors / IDEs
 .vscode/*
+.vs/*
 !.vscode/extensions.json
 !.vscode/settings.json
 .idea/
